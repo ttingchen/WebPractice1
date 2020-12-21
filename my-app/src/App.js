@@ -3,23 +3,22 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1> hello, {formatName(user)} !</h1>
+      <h2> It is { new Date().toLocaleTimeString()}.</h2>
     </div>
   );
 }
+
+function formatName(user) {
+  return user.firstName + user.lastName;
+  //`${user.firstName} ${user.lastName}`
+}
+
+const user = {
+  firstName: 'ttt',
+  lastName: 'ing'
+};
+
 
 export default App;
