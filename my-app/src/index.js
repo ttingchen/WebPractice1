@@ -6,12 +6,12 @@ import reportWebVitals from './reportWebVitals';
 
 
 function test() {
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+  ReactDOM.render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>,
+    document.getElementById('root')
+  );
 }
 
 setInterval(test, 1000);
