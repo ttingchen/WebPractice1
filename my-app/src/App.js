@@ -3,9 +3,17 @@ import './App.css';
 
 function App() {
   return (
-    <div>
-      <h1> hello, {formatName(user)} !</h1>
-      <h2> It is { new Date().toLocaleTimeString()}.</h2>
+    <div class='App'>
+      <div class='App-header'>
+        <div>logo</div>
+        <div>
+          <nav>
+          <a href="/projects/">projects</a>
+          </nav>
+        </div>
+      </div>
+        <h1> hello, {formatName(user)} !</h1>
+        <h2> It is { new Date().toLocaleTimeString()}.</h2>
     </div>
   );
 }
