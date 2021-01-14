@@ -15,6 +15,23 @@
 
 .App-header {
   background-color: #282c34;
+  min-height: 10vh;
+  padding: 1vw 5vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.nav-item {
+  padding-left: 25px;
+  font-size: inherit;
+  color: whitesmoke;
+}
+
+.App-originheader {
+  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
