@@ -3,14 +3,14 @@ import './App.css';
 
 function App() {
   return (
-    <div class='App'>
-      <div class='App-header'>
+    <div className='App'>
+      <div className='App-header'>
         <div>LOGO</div>
 
         <div>
           <nav>
-          <a href="/projects/" class="nav-item">PROJECTS</a>
-          <a href="/studio/" class="nav-item">STUDIO</a>
+          <a href="/projects/" className="nav-item">PROJECTS</a>
+          <a href="/studio/" className="nav-item">STUDIO</a>
           </nav>
         </div>
 
