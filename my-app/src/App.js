@@ -6,7 +6,6 @@ function App() {
     <div className='App'>
       <div className='App-header'>
         <div>LOGO</div>
-
         <div>
           <nav>
           <a href="/projects/" className="nav-item">PROJECTS</a>
@@ -15,8 +14,11 @@ function App() {
         </div>
 
       </div>
-        <h1> hello, {formatName(user)} !</h1>
-        <h2> It is { new Date().toLocaleTimeString()}.</h2>
+      <div className="Sec-picture">
+        first part
+      </div>
+      <h1> hello, {formatName(user)} !</h1>
+      <h2> It is { new Date().toLocaleTimeString()}.</h2>
     </div>
   );
 }

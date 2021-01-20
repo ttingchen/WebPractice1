@@ -15,7 +15,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 10vh;
+  min-height: calc(12vh - 2vw);
   padding: 1vw 5vw;
   display: flex;
   flex-direction: row;
@@ -28,6 +28,11 @@
   padding-left: 25px;
   font-size: inherit;
   color: whitesmoke;
+}
+.Sec-picture {
+  background-color: #979ead;
+  min-height: calc(88vh - 2vw);
+  padding: 1vw;
 }
 
 .App-originheader {
