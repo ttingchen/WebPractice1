@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import pic1 from './assets/737.jpg';
+import pic2 from './assets/861.jpg';
 
 function App() {
   return (
@@ -12,8 +14,19 @@ function App() {
           <a href="/studio/" className="nav-item">STUDIO</a>
           </nav>
         </div>
-
       </div>
+
+      <div className="slideshow-container">
+        <div className="mySlides fade">
+          <div className="numbertext">1 / 3</div>
+          <img className="slide-img" src={showSlides()} alt="Picture1"/>
+          <div className="text">{showSlides()}</div>
+        </div>
+
+        <a className="prev" onClick={plusSlides}>&#10094;</a>
+        <a className="next" onClick={plusSlides}>&#10095;</a>
+      </div>
+
       <div className="Sec-picture">
         first part
       </div>
@@ -32,6 +45,24 @@ const user = {
   firstName: 'ttt',
   lastName: 'ing'
 };
+
+var slideIndex = 1;
+
+// Next/previous controls
+function plusSlides() {
+  slideIndex = slideIndex % 2 + 1;
+  showSlides();
+}
+
+function showSlides() {
+  if(slideIndex == 1){
+    return pic1;
+  }
+  if(slideIndex == 2){
+    return pic2;
+  }
+  return pic1;
+}
 
 
 export default App;
