@@ -78,8 +78,8 @@
 }
 
 .slide-img {
-  object-fit: scale-down;
-  max-height: inherit;
+  object-fit: cover;
+  width: 100%;
 }
 
 /* Next & previous buttons */

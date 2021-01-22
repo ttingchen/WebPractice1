@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import pic1 from './assets/737.jpg';
 import pic2 from './assets/861.jpg';
+import pic3 from './assets/687951.jpg';
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
           <div className="text">{showSlides()}</div>
         </div>
 
-        <a className="prev" onClick={plusSlides}>&#10094;</a>
+        <a className="prev" onClick={minusSlides}>&#10094;</a>
         <a className="next" onClick={plusSlides}>&#10095;</a>
       </div>
 
@@ -49,8 +50,16 @@ const user = {
 var slideIndex = 1;
 
 // Next/previous controls
+function minusSlides() {
+  slideIndex = (slideIndex - 1) % 3;
+  if(slideIndex == 0){
+    slideIndex = 3;
+  }
+  showSlides();
+}
+
 function plusSlides() {
-  slideIndex = slideIndex % 2 + 1;
+  slideIndex = slideIndex % 3 + 1;
   showSlides();
 }
 
@@ -61,7 +70,7 @@ function showSlides() {
   if(slideIndex == 2){
     return pic2;
   }
-  return pic1;
+  return pic3;
 }
 
 
