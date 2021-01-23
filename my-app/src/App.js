@@ -21,7 +21,11 @@ function App() {
         <div className="mySlides fade">
           <div className="numbertext">1 / 3</div>
           <img className="slide-img" src={showSlides()} alt="Picture1"/>
-          <div className="text">{showSlides()}</div>
+        </div>
+        <div className="dot-container">
+          <span className="dot active"></span> 
+          <span className="dot"></span> 
+          <span className="dot"></span> 
         </div>
 
         <a className="prev" onClick={minusSlides}>&#10094;</a>
@@ -31,7 +35,7 @@ function App() {
       <div className="Sec-picture">
         first part
       </div>
-      <h1> hello, {formatName(user)} !</h1>
+      <h1> hello, {formatName(user1)} !</h1>
       <h2> It is { new Date().toLocaleTimeString()}.</h2>
     </div>
   );
@@ -42,32 +46,41 @@ function formatName(user) {
   //`${user.firstName} ${user.lastName}`
 }
 
-const user = {
+const user1 = {
   firstName: 'ttt',
   lastName: 'ing'
 };
 
 var slideIndex = 1;
+const picNum = 3;
+var dots;
 
 // Next/previous controls
 function minusSlides() {
-  slideIndex = (slideIndex - 1) % 3;
-  if(slideIndex == 0){
-    slideIndex = 3;
+  dots = document.getElementsByClassName("dot");
+  dots[slideIndex-1].className="dot";
+  slideIndex = (slideIndex - 1) % picNum;
+  if(slideIndex === 0){
+    slideIndex = picNum;
   }
   showSlides();
 }
 
 function plusSlides() {
-  slideIndex = slideIndex % 3 + 1;
+  dots = document.getElementsByClassName("dot");
+  dots[slideIndex-1].className="dot";
+  slideIndex = slideIndex % picNum + 1;
   showSlides();
 }
 
 function showSlides() {
-  if(slideIndex == 1){
+  if(dots!=null){
+    dots[slideIndex-1].className="dot active";
+  }
+  if(slideIndex === 1){
     return pic1;
   }
-  if(slideIndex == 2){
+  if(slideIndex === 2){
     return pic2;
   }
   return pic3;
