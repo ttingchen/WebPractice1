@@ -31,14 +31,14 @@
 }
 .projects-container {
   background-color: #252625;
-  min-height: 120vh;
+  min-height: max-content;
   padding: 5vw;
 }
 
 .projects-text {
   color: whitesmoke;
   text-align: left;
-  padding: 15px 15px 50px;
+  padding: 50px 15px;
   font-size: 1.4rem;
   font-weight: bolder;
 }
@@ -46,7 +46,7 @@
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: max-content max-content;
+  grid-template-rows: max-content;
   gap: 20px;
   padding: 15px;
 }

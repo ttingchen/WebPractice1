@@ -46,6 +46,18 @@ function App() {
             <img className="project-img" src={p1} alt="Project1"/>
             <div className="projects-itemtext">img2 content</div>
           </div>
+          <div className="projects-item">
+            <img className="project-img" src={p1} alt="Project1"/>
+            <div className="projects-itemtext">img2 content</div>
+          </div>
+          <div className="projects-item">
+            <img className="project-img" src={p1} alt="Project1"/>
+            <div className="projects-itemtext">img2 content</div>
+          </div>
+          <div className="projects-item">
+            <img className="project-img" src={p1} alt="Project1"/>
+            <div className="projects-itemtext">img2 content</div>
+          </div>
         </div>
         
       </div>
