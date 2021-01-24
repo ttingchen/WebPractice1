@@ -3,6 +3,7 @@ import './App.css';
 import pic1 from './assets/737.jpg';
 import pic2 from './assets/861.jpg';
 import pic3 from './assets/687951.jpg';
+import p1 from './assets/p1.jpg';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <div>LOGO</div>
         <div>
           <nav>
-          <a href="/projects/" className="nav-item">PROJECTS</a>
+          <a href="#projects" className="nav-item">PROJECTS</a>
           <a href="/studio/" className="nav-item">STUDIO</a>
           </nav>
         </div>
@@ -32,8 +33,21 @@ function App() {
         <a className="next" onClick={plusSlides}>&#10095;</a>
       </div>
 
-      <div className="Sec-picture">
-        first part
+      <div className="projects-container">
+        <div className="projects-text" id="projects">
+          PROJECTS
+        </div>
+        <div className="projects-grid">
+          <div className="projects-item">
+            <img className="project-img" src={p1} alt="Project1"/>
+            <div className="projects-itemtext">img content</div>
+          </div>
+          <div className="projects-item">
+            <img className="project-img" src={p1} alt="Project1"/>
+            <div className="projects-itemtext">img2 content</div>
+          </div>
+        </div>
+        
       </div>
       <h1> hello, {formatName(user1)} !</h1>
       <h2> It is { new Date().toLocaleTimeString()}.</h2>

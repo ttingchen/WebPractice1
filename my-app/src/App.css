@@ -29,10 +29,42 @@
   font-size: inherit;
   color: whitesmoke;
 }
-.Sec-picture {
-  background-color: #979ead;
-  min-height: 100vh;
-  padding: 10vw;
+.projects-container {
+  background-color: #252625;
+  min-height: 120vh;
+  padding: 5vw;
+}
+
+.projects-text {
+  color: whitesmoke;
+  text-align: left;
+  padding: 15px 15px 50px;
+  font-size: 1.4rem;
+  font-weight: bolder;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: max-content max-content;
+  gap: 20px;
+  padding: 15px;
+}
+
+.projects-item {
+
+}
+
+.project-img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.projects-itemtext {
+  color: whitesmoke;
+  font-size: 1.1em;
+  text-align: start;
+  padding: 10px 0px;
 }
 
 .App-originheader {
@@ -145,12 +177,12 @@
   height: 10px;
   width: 10px;
   margin: 0 4px;
-  background-color: #bbb;
+  background-color:#717171;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color:  #bbb;
 }
