@@ -13,7 +13,7 @@ function App() {
         <div>
           <nav>
           <a href="#projects" className="nav-item">PROJECTS</a>
-          <a href="/studio/" className="nav-item">STUDIO</a>
+          <a href="#contact" className="nav-item">CONTACT</a>
           </nav>
         </div>
       </div>
@@ -61,8 +61,15 @@ function App() {
         </div>
         
       </div>
-      <h1> hello, {formatName(user1)} !</h1>
-      <h2> It is { new Date().toLocaleTimeString()}.</h2>
+      <div className="contact-container">
+        <div className="projects-text" id="contact">
+          CONTACT
+        </div>
+      </div>
+      <div className="footer">
+        <h1> hello, {formatName(user1)} !</h1>
+        <h4> { new Date().toLocaleTimeString()}.</h4>
+      </div>
     </div>
   );
 }
