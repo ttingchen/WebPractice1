@@ -59,11 +59,40 @@ function App() {
             <div className="projects-itemtext">img2 content</div>
           </div>
         </div>
-        
       </div>
+
       <div className="contact-container">
         <div className="projects-text" id="contact">
           CONTACT
+        </div>
+        <div className="form">
+          <div className="form-grid">
+            <div className="input-field">
+              <input className="input" type="text" id="fname" name="fname"></input>
+              <label htmlFor="fname">FIRST NAME</label>
+            </div>
+            <div className="input-field">
+              <input className="input" type="text" id="lname" name="lname"></input>
+              <label htmlFor="lname">LAST NAME</label>
+            </div>
+            <div className="input-field">
+              <input className="input" type="text" id="email" name="email"></input>
+              <label htmlFor="email">EMAIL ADDRESS</label>
+            </div>
+            <div className="input-field">
+              <input className="input" type="text" id="country" name="country"></input>
+              <label htmlFor="country">COUNTRY</label>
+            </div>
+
+          </div>
+          <div className="message-field">
+            <textarea className="message" name="message" placeholder="The cat was playing in the garden.">
+            </textarea>
+            <label htmlFor="message">MESSAGE</label>
+          </div>
+          <div className="submit-container">
+            <input className="submit" type="submit" value="Submit"></input>
+          </div>
         </div>
       </div>
       <div className="footer">
