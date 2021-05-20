@@ -4,3 +4,6 @@
 cd my-app
 npm start
 ```
+![image](https://i.imgur.com/1tghHbm.jpg)
+![image](https://i.imgur.com/pavWBZy.jpg)
+![image](https://i.imgur.com/ihM0FBI.png)
