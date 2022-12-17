@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import pic1 from './assets/737.jpg';
 import pic2 from './assets/861.jpg';
@@ -68,27 +67,27 @@ function App() {
         <div className="form">
           <div className="form-grid">
             <div className="input-field">
-              <input className="input" type="text" id="fname" name="fname"></input>
               <label htmlFor="fname">FIRST NAME</label>
+              <input className="input" type="text" id="fname" name="fname"></input>
             </div>
             <div className="input-field">
-              <input className="input" type="text" id="lname" name="lname"></input>
               <label htmlFor="lname">LAST NAME</label>
+              <input className="input" type="text" id="lname" name="lname"></input>
             </div>
             <div className="input-field">
-              <input className="input" type="text" id="email" name="email"></input>
               <label htmlFor="email">EMAIL ADDRESS</label>
+              <input className="input" type="text" id="email" name="email"></input>
             </div>
             <div className="input-field">
-              <input className="input" type="text" id="country" name="country"></input>
               <label htmlFor="country">COUNTRY</label>
+              <input className="input" type="text" id="country" name="country"></input>
             </div>
 
           </div>
           <div className="message-field">
+            <label htmlFor="message">MESSAGE</label>
             <textarea className="message" name="message" placeholder="The cat was playing in the garden.">
             </textarea>
-            <label htmlFor="message">MESSAGE</label>
           </div>
           <div className="submit-container">
             <input className="submit" type="submit" value="Submit"></input>

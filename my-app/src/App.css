@@ -102,12 +102,11 @@ input, textarea,input:focus {
   font-family: Raleway, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
   sans-serif;
-  font-size: medium;
   outline-color: white;
 }
 
 label {
-  padding-top: 10px;
+  padding-bottom: 10px;
   color: whitesmoke;
 }
 
@@ -118,7 +117,7 @@ label {
 }
 
 .input {
-  width: fill-available;
+  width: stretch;
   height: 2em;
 }
 
@@ -131,8 +130,8 @@ label {
 }
 
 .message {
-  width: fill-available;
-  height: fill-available;
+  width: stretch;
+  height: stretch;
 }
 
 .submit-container {

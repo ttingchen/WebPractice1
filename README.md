@@ -2,6 +2,7 @@
 ### Run the website
 ```
 cd my-app
+npm install
 npm start
 ```
 ![image](https://i.imgur.com/1tghHbm.jpg)
