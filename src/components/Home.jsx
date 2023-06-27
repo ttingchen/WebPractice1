@@ -2,6 +2,7 @@ import React from "react";
 // importing Link from react-router-dom to navigate to 
 // different end points.
 // import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 import pic1 from '../assets/flower.jpg';
 import pic2 from '../assets/factory.jpg';
 import pic3 from '../assets/mountain.jpg';
@@ -19,8 +20,8 @@ const Home = () => {
                     <span className="dot"></span>
                 </div>
 
-                <a className="prev" onClick={minusSlides}>&#10094;</a>
-                <a className="next" onClick={plusSlides}>&#10095;</a>
+                <span className="prev" onClick={minusSlides}>&#10094;</span>
+                <span className="next" onClick={plusSlides}>&#10095;</span>
             </div>
 
             <div className="projects-container">
@@ -29,7 +30,7 @@ const Home = () => {
                 </div>
                 <div className="projects-grid">
                     <div className="projects-item">
-                        <a href="/project1"><img className="projects-img" src={pic3} alt="Project1" /></a>
+                        <Link to="/personal-info/project1/#project"><img className="projects-img" src={pic3} alt="Project1" /></Link>
                         <div className="projects-itemtext">Project1</div>
                     </div>
                     <div className="projects-item">

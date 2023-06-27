@@ -22,9 +22,9 @@ const Layout = () => {
                 <div>LOGO</div>
                 <div>
                     <nav>
-                        <Link className="nav-item" to="/">HOME</Link>
-                        <Link className="nav-item" to="/#projects">PROJECTS</Link>
-                        <Link className="nav-item" to="/#contact">CONTACT</Link>
+                        <Link className="nav-item" to="/personal-info">HOME</Link>
+                        <Link className="nav-item" to="/personal-info/#projects">PROJECTS</Link>
+                        <Link className="nav-item" to="/personal-info/#contact">CONTACT</Link>
                         {/* <a href="/" className="nav-item">HOME</a>
                         <a href="/#projects" className="nav-item">PROJECTS</a>
                         <a href="/#contact" className="nav-item">CONTACT</a> */}
