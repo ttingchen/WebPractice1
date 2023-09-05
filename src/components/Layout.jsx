@@ -19,7 +19,7 @@ const Layout = () => {
 
 
             <div className='App-header'>
-                <div>LOGO</div>
+                <div>TING-JUNG CHEN</div>
                 <div>
                     <nav>
                         <Link className="nav-item" to="/personal-info">HOME</Link>

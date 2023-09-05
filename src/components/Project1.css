@@ -59,6 +59,12 @@
     height: 40vw;
 }
 
+.project-video {
+    object-fit: contain;
+    height: inherit;
+    padding: 30px 0;
+}
+
 .project-img {
     object-fit: contain;
     height: inherit;

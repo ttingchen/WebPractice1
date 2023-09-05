@@ -6,7 +6,8 @@ import { HashLink as Link } from 'react-router-hash-link';
 import pic1 from '../assets/flower.jpg';
 import pic2 from '../assets/factory.jpg';
 import pic3 from '../assets/mountain.jpg';
-import p1 from '../assets/p1.jpg';
+import p1 from '../assets/biped.jpg';
+import defa from '../assets/p1.jpg';
 const Home = () => {
     return (
         <div>
@@ -30,23 +31,23 @@ const Home = () => {
                 </div>
                 <div className="projects-grid">
                     <div className="projects-item">
-                        <Link to="/personal-info/project1/#project"><img className="projects-img" src={pic3} alt="Project1" /></Link>
-                        <div className="projects-itemtext">Project1</div>
+                        <Link to="/personal-info/project1/#project"><img className="projects-img" src={p1} alt="Project1" /></Link>
+                        <div className="projects-itemtext">Biped: Self-Balancing System</div>
                     </div>
                     <div className="projects-item">
-                        <img className="projects-img" src={p1} alt="Project1" />
+                        <img className="projects-img" src={defa} alt="Project1" />
                         <div className="projects-itemtext">img2 content</div>
                     </div>
                     <div className="projects-item">
-                        <img className="projects-img" src={p1} alt="Project1" />
+                        <img className="projects-img" src={defa} alt="Project1" />
                         <div className="projects-itemtext">img2 content</div>
                     </div>
                     <div className="projects-item">
-                        <img className="projects-img" src={p1} alt="Project1" />
+                        <img className="projects-img" src={defa} alt="Project1" />
                         <div className="projects-itemtext">img2 content</div>
                     </div>
                     <div className="projects-item">
-                        <img className="projects-img" src={p1} alt="Project1" />
+                        <img className="projects-img" src={defa} alt="Project1" />
                         <div className="projects-itemtext">img2 content</div>
                     </div>
                 </div>

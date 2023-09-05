@@ -1,23 +1,25 @@
 import React from "react";
 
 import './Project1.css';
-import pic from '../assets/mountain.jpg';
+import YouTube from 'react-youtube';
+import pic from '../assets/biped.jpg';
 
 const Project1 = () => {
     return (
         <div className="project-container" id="project">
             <div className="project-title">
-                PROJECT NAME
+                Biped: Two-Wheeled Self-Balancing System
             </div>
             <div className="project-date">
-                Jun. 2022 - Aug. 2022
+                Apr. 2023 - May. 2023
             </div>
             <div className="project-animator">
                 <div className="project-text">
-                    From user experience to functionality, security, and scalability, there's no shortage of things to keep in mind during the development process. One of the keys to success is starting with a clear plan that outlines your goals and objectives. This will help ensure that everyone involved in the project is on the same page and working towards the same end result. As you move through the development process, it's important to remain flexible and open to new ideas and feedback from users. With the right approach, a web application project can be a great opportunity to create something truly innovative and valuable for your users.
+                    A semester-long project focusing on both the hardware and the software of a custom two-wheeled self-balancing robot and ultimately make the two-wheeled system balance itself, as well as command the system to maneuver around.
                 </div>
                 <div className="project-grid">
-                    <img className="project-img" src={pic} alt="Project1" />
+                    {/* <img className="project-img" src={pic} alt="Project1" /> */}
+                    <YouTube videoId="guyPOgvUr6w" />
                     {/* <div className="projects-itemtext">img2 content</div> */}
                 </div>
             </div>
