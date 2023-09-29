@@ -8,6 +8,7 @@ import pic2 from '../assets/factory.jpg';
 import pic3 from '../assets/mountain.jpg';
 import p1 from '../assets/biped.jpg';
 import defa from '../assets/p1.jpg';
+import mirror from '../assets/mirror.png';
 const Home = () => {
     return (
         <div>
@@ -35,8 +36,8 @@ const Home = () => {
                         <div className="projects-itemtext">Biped: Self-Balancing System</div>
                     </div>
                     <div className="projects-item">
-                        <img className="projects-img" src={defa} alt="Project1" />
-                        <div className="projects-itemtext">img2 content</div>
+                        <Link to="/personal-info/project2/#project"><img className="projects-img" src={mirror} alt="Project2" /></Link>
+                        <div className="projects-itemtext">Home Monitoring Mirror</div>
                     </div>
                     <div className="projects-item">
                         <img className="projects-img" src={defa} alt="Project1" />
